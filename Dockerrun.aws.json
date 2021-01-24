@@ -3,21 +3,21 @@
   "containerDefinitions": [
     {
       "name": "client",
-      "image": "pmagas/multi-client",
+      "image": "pmagas/multi-client-10-14",
       "hostname": "client",
       "essential": false,
       "memory": 128
     },
     {
       "name": "server",
-      "image": "pmagas/multi-server",
+      "image": "pmagas/multi-server-10-14",
       "hostname": "api",
       "essential": false,
       "memory": 128
     },
     {
       "name": "nginx",
-      "image": "pmagas/multi-nginx",
+      "image": "pmagas/multi-nginx-10-14",
       "hostname": "nginx",
       "essential": true,
       "portMappings": [
