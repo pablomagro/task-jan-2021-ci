@@ -21,14 +21,14 @@ after_success:
   - docker push pmagas/multi-nginx-10-14
   - docker push pmagas/multi-server-10-14
 
-# deploy:
-#   provider: elasticbeanstalk
-#   region: 'ap-southeast-2'
-#   app: 'multi-docker'
-#   env: 'MultiDocker-env'
-#   bucket_name: 'elasticbeanstalk-ap-southeast-2-605313441167'
-#   bucket_path: 'docker-multi'
-#   on:
-#     branch: master
-#   access_key_id: $AWS_ACCESS_KEY
-#   secret_access_key: $AWS_SECRET_KEY
+deploy:
+  provider: elasticbeanstalk
+  region: 'ap-southeast-2'
+  app: 'task-jan-2021-multi-doker'
+  env: 'TaskJan2021MultiDoker-env'
+  bucket_name: 'elasticbeanstalk-ap-southeast-2-605313441167'
+  bucket_path: 'task-jan-2021-multi-doker'
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
