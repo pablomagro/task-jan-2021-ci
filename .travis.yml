@@ -14,9 +14,9 @@ after_success:
   - docker build -t pmagas/multi-client-10-14 ./client
   - docker build -t pmagas/multi-nginx-10-14 ./nginx
   - docker build -t pmagas/multi-server-10-14 ./server
-  # Log in to the docker CLI
+  # Log in to the docker CLI.
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  # Take those images and push them to docker hub
+  # Take those images and push them to docker hub.
   - docker push pmagas/multi-client-10-14
   - docker push pmagas/multi-nginx-10-14
   - docker push pmagas/multi-server-10-14

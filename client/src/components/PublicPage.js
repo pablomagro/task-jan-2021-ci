@@ -4,9 +4,7 @@ import LoginButton from './LoginButton';
 const PublicPage = () => {
     return (
         <div>
-            {/* <br/> */}
-            <h2> SolarZero Task Application </h2>
-            {/* <br/> */}
+            <h2>SolarZero Task Application</h2>
             <LoginButton/>
         </div>
     );

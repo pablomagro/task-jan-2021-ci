@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import LogoutButton from './LogoutButton';
 
-const GET_SURVEY_PRICES_URL = 'https://o3w50784xk.execute-api.ap-southeast-2.amazonaws.com/Prod/mbie_survey_prices';
+const GET_SURVEY_PRICES_URL = 'https://lwie37u6qd.execute-api.ap-southeast-2.amazonaws.com/Prod/mbie_survey_prices';
 const XLSX_VIEWER_URL = 'https://view.officeapps.live.com/op/embed.aspx?src=';
 
 class Survey extends Component {
@@ -36,7 +36,7 @@ class Survey extends Component {
         <br/>
 
         <div className="survey-container">
-          <iframe className="suvey-iframe" src={iFrameSrc} title={uniqueTitle}></iframe>
+          <iframe className="survey-iframe" src={iFrameSrc} title={uniqueTitle}></iframe>
         </div>
       </div>
     );
