@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import LogoutButton from './LogoutButton';
 
-const GET_SURVEY_PRICES_URL = 'https://sdcemt6dv2.execute-api.ap-southeast-2.amazonaws.com/Prod/mbie_survey_prices';
+const GET_SURVEY_PRICES_URL = 'https://o3w50784xk.execute-api.ap-southeast-2.amazonaws.com/Prod/mbie_survey_prices';
 const XLSX_VIEWER_URL = 'https://view.officeapps.live.com/op/embed.aspx?src=';
 
 class Survey extends Component {
